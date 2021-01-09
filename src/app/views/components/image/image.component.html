@@ -1,0 +1,20 @@
+<div class="container mt-5">
+
+    <div class="row animate__animated animate__bounce animate-_fadeIn">
+
+        <div class="col-md-9">
+            <p><span class="lead">Identifier: </span>{{image.id}}</p>
+            <p><span class="lead">Author: </span>{{image.author}}</p>
+            <p><span class="lead">Size: </span>{{image.width}}px - {{image.height}}px</p>
+            <p><span class="lead">Url: </span>{{image.url}}</p>
+        </div>
+
+        <div class="col-md-3 ">
+            <button class="btn btn-danger w-100" routerLink="/">Back</button>
+        </div>
+
+        <img class="mb-5 col-12" src="{{image.download_url}}" alt="an image by {{image.author}}">
+
+    </div>
+
+</div>
